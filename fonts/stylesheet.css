@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url('Mulish-Medium.eot');
+    src: local('Mulish Medium'), local('Mulish-Medium'),
+        url('Mulish-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Mulish-Medium.woff2') format('woff2'),
+        url('Mulish-Medium.woff') format('woff'),
+        url('Mulish-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('Mulish-ExtraBold.eot');
+    src: local('Mulish ExtraBold'), local('Mulish-ExtraBold'),
+        url('Mulish-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Mulish-ExtraBold.woff2') format('woff2'),
+        url('Mulish-ExtraBold.woff') format('woff'),
+        url('Mulish-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('Mulish-Bold.eot');
+    src: local('Mulish Bold'), local('Mulish-Bold'),
+        url('Mulish-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Mulish-Bold.woff2') format('woff2'),
+        url('Mulish-Bold.woff') format('woff'),
+        url('Mulish-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('Mulish-SemiBold.eot');
+    src: local('Mulish SemiBold'), local('Mulish-SemiBold'),
+        url('Mulish-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Mulish-SemiBold.woff2') format('woff2'),
+        url('Mulish-SemiBold.woff') format('woff'),
+        url('Mulish-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

@@ -1,0 +1,35 @@
+$blak: #664B42;
+$orange: #FD9F32;
+
+body {
+    font-family: Mulish, sans-serif;
+    background: #FFFFFF;
+}
+
+.container {
+    margin: 0 auto;
+
+    // Медиа запрос для планшетов
+    @media (min-width: 1024px) {
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1920px) {
+        max-width: 1920px;
+    }
+}
+
+.container-contant {
+    margin: 0 auto;
+    padding: 0 20px;
+
+    // Медиа запрос для планшетов
+    @media (min-width: 1024px) {
+        padding: 0 30px;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1920px) {
+        padding: 0 60px;
+    }
+}

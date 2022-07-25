@@ -1,0 +1,14 @@
+.header__burger {
+    width: 28px;
+    height: 28px;
+    background: $orange;
+
+    // Медиа запрос для планшетов
+    @media (min-width: 1024px) {
+        display: none;
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1920px) {
+    }
+}
