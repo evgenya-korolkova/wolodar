@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -53,21 +53,4 @@ button, input {
 
 button {
     cursor: pointer;
-}
-
-.none {
-    display: none;
-}
-
-.none-scroll {
-    overflow: hidden;
-}
-
-.hidden {
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    appearance: none;
 }

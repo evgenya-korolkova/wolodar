@@ -1,14 +1,62 @@
-.header__burger {
+.burger-btn {
+    position: relative;
+    z-index: 15;
     width: 28px;
     height: 28px;
-    background: $orange;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
     // Медиа запрос для планшетов
     @media (min-width: 1024px) {
         display: none;
     }
-
+    
     // Медиа запрос для десктопов
     @media (min-width: 1920px) {
+    }
+}
+
+.burger-btn span {
+    position: relative;
+    display: block;
+    width: 26px;
+    height: 2px;
+    border-radius: 1px;
+    background: #A28276;
+
+    &::before, &::after {
+        position: absolute;
+        left: 0;
+        content: "";
+        width: 26px;
+        height: 2px;
+        background: #A28276;
+        border-radius: 1px;
+
+        transition: 0.4s;
+    }
+    &::before {
+        top: -6px;
+    }
+    &::after {
+        bottom: -6px;
+    }
+}
+
+.burger-btn_active {
+    span {
+        background-color: transparent;
+    
+        &::before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+        &::after {
+            transform: rotate(-45deg);
+            bottom: 0;
+        }
     }
 }

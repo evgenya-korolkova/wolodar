@@ -3,23 +3,17 @@ $orange: #FD9F32;
 
 body {
     font-family: Mulish, sans-serif;
-    background: #FFFFFF;
+    font-size: 18px;
+    color: $blak;
+    background: #FFF;
 }
 
 .container {
     margin: 0 auto;
-
-    // Медиа запрос для планшетов
-    @media (min-width: 1024px) {
-    }
-
-    // Медиа запрос для десктопов
-    @media (min-width: 1920px) {
-        max-width: 1920px;
-    }
+    max-width: 1920px;
 }
 
-.container-contant {
+.contant-container {
     margin: 0 auto;
     padding: 0 20px;
 
@@ -30,6 +24,40 @@ body {
 
     // Медиа запрос для десктопов
     @media (min-width: 1920px) {
-        padding: 0 60px;
+        padding: 0 64px;
     }
+}
+
+.test {
+    // Медиа запрос для планшетов
+    @media (min-width: 1024px) {
+    }
+
+    // Медиа запрос для десктопов
+    @media (min-width: 1920px) {
+    }
+}
+
+.none {
+    display: none;
+    // display: none!important;
+}
+
+.none-scroll {
+    overflow: hidden;
+}
+
+#overlay {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(102, 75, 66, 0.3);
+    display: none;
+}
+
+#overlay.active {
+    display: block;
 }
