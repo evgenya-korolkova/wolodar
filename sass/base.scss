@@ -9,11 +9,11 @@ body {
 }
 
 .container {
-    margin: 0 auto;
     max-width: 1920px;
+    margin: 0 auto;
 }
 
-.contant-container {
+.container-content {
     margin: 0 auto;
     padding: 0 20px;
 
@@ -47,17 +47,17 @@ body {
     overflow: hidden;
 }
 
-#overlay {
+.overlay {
     position: fixed;
     z-index: 5;
-    top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
     background: rgba(102, 75, 66, 0.3);
     display: none;
 }
 
-#overlay.active {
+.overlay_active {
     display: block;
 }

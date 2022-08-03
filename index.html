@@ -12,15 +12,15 @@
 </head>
 <body>
 
-    <div id="overlay"></div>
+    <div class="overlay"></div>
 
     <div class="container">
 
         <header class="header">
 
-            <div class="contant-container">
+            <div class="container-content">
 
-                <div class="header-container">
+                <div class="header-content">
 
                     <div class="header__top">
 
@@ -29,72 +29,76 @@
                             <div class="header__lang">
                                 <div class="header__lang__text">Ru</div>
                                 <div class="header__lang__vector"></div>
+                                <div class="header__lang__list">
+                                    <a class="header__lang__list__item" href="#">Uz</a>
+                                    <a class="header__lang__list__item" href="#">Kz</a>
+                                </div>
                             </div>
 
                             <div class="burger-btn"><span></span></div>
                             
                             <div class="header__icons">
-                                <a href="#" class="header__icons__search header__icons__item"></a>
-
-                                <a href="#" class="header__icons__cart header__icons__item">
-                                    <div class="header__icons__cart-badge">0</div>
+                                <a class="header__icons__item header__icons__search" href="#"></a>
+                                <a class="header__icons__item header__icons__cart" href="#">
+                                    <div class="header__icons__cart__badge">0</div>
                                 </a>    
                             </div>
 
-                        </div>   
+                        </div>  <!-- // header__row -->
 
                         <div class="header__contacts">
-                            <div class="header__contacts__icons">
-                                <a href="#" class="header__contacts__icons__youtube header__contacts__icons__item"></a>
-                                <a href="#" class="header__contacts__icons__instagram header__contacts__icons__item"></a>
-                                <a href="#" class="header__contacts__icons__chat header__contacts__icons__item"></a>
-                                <a href="#" class="header__contacts__icons__telegram header__contacts__icons__item"></a>
-                                <a href="#" class="header__contacts__icons__vk header__contacts__icons__item"></a>
+
+                            <div class="header__social">
+                                <a class="header__social__item social-yt" href="https://www.youtube.com/wolodar" rel="noopener noreferrer" target="_blank"></a>
+                                <a class="header__social__item social-ig" href="#"></a>
+                                <a class="header__social__item social-chat" href="#"></a>
+                                <a class="header__social__item social-tg" href="https://t.me/wolodar" rel="noopener noreferrer" target="_blank"></a>
+                                <a class="header__social__item social-vk" href="https://vk.com/club195325910" rel="noopener noreferrer" target="_blank" ></a>
                             </div>
 
-                            <div class="header__contacts__phone">
-                                <div class="header__contacts__phone__number">+7 (831) 228-90-80</div>
-                                <div class="header__contacts__phone__img"></div>
+                            <div class="header__phone">
+                                <!-- <div class="header__phone__number">+7 (831) 228-90-80</div> -->
+                                <a class="header__phone__number" href="tel:+78312289080">+7 (831) 228-90-80</a>
+                                <div class="header__phone__img"></div>
                             </div>
-                        </div>
 
-                        <a href="#" class="header__logo">
-                            <img src="./img/header/logo.png" class="header__logo__img" alt="Лого">
+                        </div> <!-- // header__contacts -->
+
+                        <a class="header__logo" href="#">
+                            <img class="header__logo__img" src="./img/header/logo.png" alt="Лого">
                         </a>
 
-                        
-
-                    </div>
+                    </div> <!-- // header__top -->
 
                     <nav class="header__nav">
 
                         <div class="header__menu">
                             <div class="header__menu__item">
-                                <a href="#" class="header__menu__item__text header__menu__item__link">Продукция</a>
+                                <a class="header__menu__item__text header__menu__item__link" href="#">Продукция</a>
                             </div>
 
                             <div class="header__menu__item">
                                 <div class="header__menu__item__text">Услуги</div>
                                 <div class="header__submenu  header__submenu_hidden">
 
-                                    <a href="#" class="header__submenu__item">
-                                        <img src="./img/header/nav/company.png" alt="Компания" class="header__submenu__item__img">
+                                    <a class="header__submenu__item" href="#">
+                                        <img class="header__submenu__item__img" src="./img/header/nav/company.png" alt="Компания">
                                         <div class="header__submenu__item__text__wrap">
                                             <div class="header__submenu__item__text">Услуги-1</div>
                                             <div class="header__submenu__item__arrow"></div>
                                         </div>
                                     </a>
 
-                                    <a href="#" class="header__submenu__item">
-                                        <img src="./img/header/nav/history.png" alt="История" class="header__submenu__item__img">
+                                    <a class="header__submenu__item" href="#">
+                                        <img class="header__submenu__item__img" src="./img/header/nav/history.png" alt="История">
                                         <div class="header__submenu__item__text__wrap">
                                             <div class="header__submenu__item__text">Услуги-2</div>
                                             <div class="header__submenu__item__arrow"></div>
                                         </div>
                                     </a>
 
-                                    <a href="#" class="header__submenu__item">
-                                        <img src="./img/header/nav/documents.png" alt="Документы" class="header__submenu__item__img">
+                                    <a class="header__submenu__item" href="#">
+                                        <img class="header__submenu__item__img" src="./img/header/nav/documents.png" alt="Документы">
                                         <div class="header__submenu__item__text__wrap">
                                             <div class="header__submenu__item__text">Услуги-3</div>
                                             <div class="header__submenu__item__arrow"></div>
@@ -105,75 +109,59 @@
                             </div>
 
                             <div class="header__menu__item">
-                                <a href="#" class="header__menu__item__text header__menu__item__link">Клиентам</a>
+                                <a class="header__menu__item__text header__menu__item__link" href="#">Клиентам</a>
                             </div>
 
                             <div class="header__menu__item">
                                 <div class="header__menu__item__text">О компании</div>
                                 <div class="header__submenu header__submenu_hidden">
 
-                                    <a href="#" class="header__submenu__item">
-                                        <img src="./img/header/nav/company.png" alt="Компания" class="header__submenu__item__img">
+                                    <a class="header__submenu__item" href="#">
+                                        <img class="header__submenu__item__img" src="./img/header/nav/company.png" alt="Компания">
                                         <div class="header__submenu__item__text__wrap">
                                             <div class="header__submenu__item__text">Наша компания</div>
                                             <div class="header__submenu__item__arrow"></div>
                                         </div>
                                     </a>
 
-                                    <a href="#" class="header__submenu__item">
-                                        <img src="./img/header/nav/history.png" alt="История" class="header__submenu__item__img">
+                                    <a class="header__submenu__item" href="#">
+                                        <img class="header__submenu__item__img" src="./img/header/nav/history.png" alt="История">
                                         <div class="header__submenu__item__text__wrap">
                                             <div class="header__submenu__item__text">История комбината</div>
                                             <div class="header__submenu__item__arrow"></div>
                                         </div>
                                     </a>
 
-                                    <a href="#" class="header__submenu__item">
-                                        <img src="./img/header/nav/documents.png" alt="Документы" class="header__submenu__item__img">
+                                    <a class="header__submenu__item" href="#">
+                                        <img class="header__submenu__item__img" src="./img/header/nav/documents.png" alt="Документы">
                                         <div class="header__submenu__item__text__wrap">
                                             <div class="header__submenu__item__text">Документы</div>
                                             <div class="header__submenu__item__arrow"></div>
                                         </div>
                                     </a>
 
-                                    <a href="#" class="header__submenu__item">
-                                        <img src="./img/header/nav/photo-video.png" alt="Фото-видео" class="header__submenu__item__img">
+                                    <a class="header__submenu__item" href="#">
+                                        <img class="header__submenu__item__img" src="./img/header/nav/photo-video.png" alt="Фото-видео">
                                         <div class="header__submenu__item__text__wrap">
                                             <div class="header__submenu__item__text">Фото-видео</div>
                                             <div class="header__submenu__item__arrow"></div>
                                         </div>
                                     </a>
-
-                                    <!-- <a href="#" class="header__submenu__item">
-                                        <img src="./img/header/nav/photo-video.png" alt="Фото-видео" class="header__submenu__item__img">
-                                        <div class="header__submenu__item__text__wrap">
-                                            <div class="header__submenu__item__text">Фото-видео</div>
-                                            <div class="header__submenu__item__arrow"></div>
-                                        </div>
-                                    </a>
-
-                                    <a href="#" class="header__submenu__item">
-                                        <img src="./img/header/nav/photo-video.png" alt="Фото-видео" class="header__submenu__item__img">
-                                        <div class="header__submenu__item__text__wrap">
-                                            <div class="header__submenu__item__text">Фото-видео</div>
-                                            <div class="header__submenu__item__arrow"></div>
-                                        </div>
-                                    </a> -->
                                               
                                 </div>
                             </div>
 
                             <div class="header__menu__item">
-                                <a href="#" class="header__menu__item__text header__menu__item__link">Новости</a>
+                                <a class="header__menu__item__text header__menu__item__link" href="#">Новости</a>
                             </div>
 
                             <div class="header__menu__item">
-                                <a href="#" class="header__menu__item__text header__menu__item__link">Контакты</a>
+                                <a class="header__menu__item__text header__menu__item__link" href="#">Контакты</a>
                             </div>
                             
-                        </div>
+                        </div> <!-- // header__menu -->
 
-                    </nav>
+                    </nav>  <!-- // header__nav -->
 
                 </div>
 
@@ -183,7 +171,6 @@
 
     </div>
 
-    <!-- <script src="./js/main.js"></script> -->
     <script src="./js/main.js"></script>
 
 </body>

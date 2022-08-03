@@ -5,12 +5,11 @@ const headerMenuItemText = document.querySelectorAll('.header__menu__item__text'
 const headerMenuItems = document.querySelectorAll('.header__menu__item')
 const headerSubmenuList = document.querySelectorAll('.header__submenu')
 const headerNav = document.querySelector('.header__nav')
-const header = document.querySelector('.header__nav')
 const headerIcons = document.querySelector('.header__icons')
 const headerIconsSearch = document.querySelector('.header__icons__search')
 
 const burgerBtn = document.querySelector('.burger-btn')
-const overlay = document.querySelector("#overlay");
+const overlay = document.querySelector(".overlay");
 
 
 headerMenuItemText.forEach((item) => {
@@ -51,13 +50,10 @@ function handleHeaderMenuItemMouseOver(e) {
 
         if (subMenu) {
             const navHeight = getComputedStyle(headerNav).height
-
             // запомнить стили блока навигации
             headerNavStyle = headerNav.style
             // изменить высоту блока навигации
             headerNav.style.height = parseInt(navHeight) + parseInt(getComputedStyle(subMenu).height) + 'px'
-            // // установить top у submenu
-            // subMenu.style.top = navHeight
         }
     }
 }
@@ -85,14 +81,17 @@ function handleWindowResize() {
         headerSubmenuList.forEach((item) => {
             item.classList.add('header__submenu_hidden')
         })
-    }
 
-    document.body.classList.remove('none-scroll');
-    burgerBtn.classList.remove('burger-btn_active')
-    headerNav.classList.remove('header__nav_active')
-    headerIcons.classList.remove('header__icons_active')
-    headerIconsSearch.classList.remove('header__icons__search_active')
-    overlay.classList.remove('active')
+        document.body.classList.remove('none-scroll');
+        burgerBtn.classList.remove('burger-btn_active')
+        headerNav.classList.remove('header__nav_active')
+        headerIcons.classList.remove('header__icons_active')
+        headerIconsSearch.classList.remove('header__icons__search_active')
+        overlay.classList.remove('overlay_active')
+
+    } else {
+        calcHeaderIconsLeft()
+    }
 }
 
 // Клик по кнопке меню-бургер
@@ -102,9 +101,13 @@ function handleBurgerBtnClick() {
     headerNav.classList.toggle('header__nav_active')
     headerIcons.classList.toggle('header__icons_active')
     headerIconsSearch.classList.toggle('header__icons__search_active')
-    overlay.classList.toggle('active')
+    overlay.classList.toggle('overlay_active')
 
-    // определить left у header__icons
+    calcHeaderIconsLeft()
+}
+
+// Расчет left у header__icons
+function calcHeaderIconsLeft() {
     const headerIconsWidth = getComputedStyle(headerIcons).width
     const headerNavBeforeWidth = getComputedStyle(headerNav,':before').width
     headerIcons.style.left = (parseInt(headerNavBeforeWidth) - parseInt(headerIconsWidth)) + 'px'
